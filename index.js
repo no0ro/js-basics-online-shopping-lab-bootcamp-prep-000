@@ -63,10 +63,12 @@ return `That item is not in your cart.`;
 
 
 function placeOrder(cardNumber) {
+  var chargeReply = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+  
   if (!cardNumber){
     return `Sorry, we don't have a credit card on file for you.`;
   } else {
     cart = [];
-    re`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+    return chargeReply;
   }
 }
