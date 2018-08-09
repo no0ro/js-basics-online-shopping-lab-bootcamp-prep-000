@@ -71,6 +71,5 @@ function placeOrder(cardNumber) {
     cart = [];
     return chargeReply;
   }
-  
 }
 
